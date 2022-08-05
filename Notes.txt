@@ -1,0 +1,43 @@
+Java 8 - Functional Style.
+Java 9 - Modules, List.of, Set.of, Map.of, Map.ofEntries, jshell
+Java 10 -> Local variable, use of var (Type Inference)
+		-> Releases cadence to 6 months	(Mar, Sep)
+			-> java 5 (2004)
+			-> java 6 (2007)
+			-> java 7 (2011)
+			-> java 8 (2014)
+java 11 -> http client
+toList() instead of Collectors.tolist() -> java16
+SwitchExpression: (Java 12)
+	-> stmt (perform instructions and side effects) vs expression (compute,returns val), fn programming -> !stmts
+	-> ('->' is not lambda (expression), ';' statment)
+	-> Cant mix and match case:
+TextBlocks: (Java 15)
+	-> SmartIndentation (relative indent)
+	-> escape chars not needed
+	-> Trailing chars removed
+	-> \s to retain blank space
+	-> \ merge multiple lines
+	-> interpolation
+	-> its a compiler feature like generics
+
+Records: (Java 16)
+	-> Data classes or tuple
+	->  constructor, toString, hashcode, getters, equals 
+	-> override methods
+	-> records are immutable (not setters)
+	-> no getters.. no javabean convention
+	-> immutable
+	-> preConstructor or transformer
+	-> no inheritance, can implement interfces
+	-> Local Record 
+	-> jackson works
+Sealed Classes (Java 15)
+	-> Allows a way to specify who can inherit
+	-> default behavior, implementation classes should be in the same file
+	-> algebraic types, as in.. there are a set of dattypes that have a closed hierarchy, that are closed to outside world to extend
+	-> permits clause specifies who can use
+	-> all impls should be in same package.
+Pattern Matching (Java 16)
+	-> instanceof context
+	-> switch with context
